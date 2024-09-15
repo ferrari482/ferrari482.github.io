@@ -1,0 +1,327 @@
+body {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    margin: 0px;
+    font-size: 1.5vw;
+}
+#logo {
+    font-family: "Bungee Outline", sans-serif;
+    font-weight: 900;
+    font-size: 3vw;
+    font-style: italic;
+    width: auto;
+    margin: 0px;
+    line-height: 30px;
+    text-shadow: 
+        0 0 5px white, /* Horizontal offset | Vertical offset | Blur radius | Color */
+        0 0 10px white,
+        0 0 15px white  ,
+        0 0 20px white;
+}
+
+
+h1 {
+    text-align: center;
+}
+ul {
+    margin: 0px;
+}
+
+body > header > nav > ul {
+    list-style: none;
+    text-decoration: none;
+}
+#navbutton {
+    color: white;
+    text-decoration: none;
+    text-decoration-color: white;
+    padding: 0px;
+    text-shadow: 
+        0 0 5px white, /* Horizontal offset | Vertical offset | Blur radius | Color */
+        0 0 10px white,
+        0 0 15px white,
+        0 0 20px white;
+    
+}
+
+body > main-grid {
+    width: 70%;
+    margin: auto;
+}
+
+#form {
+    text-align:center;
+}
+
+h2 {
+    text-align: center;
+}
+body > footer {background-color: red;
+    display: flex;
+}
+
+
+
+
+#main-header {
+    display: flex;
+    align-items: center;
+    column-gap: 0;
+    justify-content: space-evenly; /* Space out logo and content */
+    padding: 0px;
+    background:linear-gradient(to bottom, red, black ); /* Background color for the header */
+    height: 15vw;
+}
+
+#picture img{
+    height: 150px;
+    border-radius: 0;
+    width: auto;
+}
+#header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    color: black;
+}
+#nav-ul {
+    display: flex;
+    list-style: none;
+    line-height: 10px;
+    align-items: self-start;
+}
+#nav-ul > li {
+    padding: 20px;  
+    margin: 15px;
+}
+body > footer {
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items:flex-start;
+}
+
+
+#footer-ul {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+    justify-content: flex-end; /* Center the columns */
+
+}
+#footer-ul li {
+    margin: 10px 15px;
+   
+}
+#footer-ul a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+#footer-ul a:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+
+#monza {
+    height: 480px;
+    width: auto;
+    padding-right: 30px;
+    margin-bottom: 0px;
+}
+
+#main-grid {
+    width: 80%;
+    margin:0 auto; 
+}
+
+#monza-article {
+    grid-area: monza-article;
+    border-right: 1px solid rgb(195, 187, 187);
+    border-spacing: none;
+    gap: 0px;
+
+}
+
+
+
+#monza-article  h3 {
+    text-decoration: underline;
+    font-size: 40px;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+#monza-article p {
+    
+    margin-right: 10px;
+    margin-left: none;
+}
+
+#monza-article footer {
+    color: rgb(198, 198, 198);
+    font-weight: bold;
+    align-items: flex-start;
+}
+#am-article {
+    grid-area: am-article;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 5;   
+}
+
+#am-article h3 {
+    text-decoration:underline;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#am-article footer {
+    color: rgb(198, 198, 198);
+    font-weight:bold;
+}
+#mclaren-article {
+    grid-area: mclaren-article;
+    border-top: 1px solid rgb(195, 187, 187);
+    border-spacing: none;
+}
+
+#mclaren-article h3 {
+    text-decoration:underline ;
+   
+}
+
+#mclaren-article footer {
+    color: rgb(198, 198, 198);
+    font-weight: bold;
+}
+#main-grid { 
+    display: grid;
+    grid-template-columns: 7fr 3fr; /* Two equal columns */
+    grid-template-rows: auto auto; /* Two rows */
+    grid-template-areas:
+        "monza-article am-article"
+        "mclaren-article mclaren-article"; /* Full-width item on bottom row */
+    gap: 10px; /* Space between items */
+    padding: 30px;
+}
+
+#layout {
+    display: grid;
+    grid-template-columns: 18% 82%; /* 20% aside, 80% content */
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling issues */
+    gap: 0;
+}
+
+
+footer > h2 {
+    color: black; 
+    padding: 10px 15px;
+    width: auto;
+    align-items: center;
+}
+
+footer {
+    height: 25vh;
+}
+
+#form {
+    display: flex;
+    grid-area: form;
+    border-right: 1px solid black;
+    border-left: none;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+#form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#subscribe {
+    justify-items: last baseline;
+}
+#form h2 {
+    margin: 0;
+}
+
+
+#about-me {
+    grid-area: about-me;
+    padding:20px
+}
+
+#about-me li {
+    list-style: none;
+    align-items: center;
+    width: auto;
+    
+}
+
+#form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-areas: 
+        "form about-me";
+    gap: 15px;
+    padding: 30px;
+  
+}
+
+
+#sidebar {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    gap: 20px; /* Space between the title and the list */
+    margin-left: 35px;
+    margin-right: none;
+    margin-top: 25px;
+    margin-bottom: none; 
+}
+
+#sidebar h2 {
+    margin: 0; /* Remove default margin from the h2 */
+    color: red;
+}
+
+#menu {
+    /* Remove default list styling */
+    padding: 8px;
+    margin: 0;
+}
+
+#menu li {
+    margin-left: 8px; 
+    margin-right:auto;
+
+}
+
+#menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 12px;
+    display: block; 
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+#menu a:hover {
+    background-color: #f0f0f0; /* Change background on hover */
+}
